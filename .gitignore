@@ -1,0 +1,8 @@
+scratch/*
+!scratch/README.md
+
+# Facilitator-only documents — never publish to attendees.
+# These ship in the source repo for instructors; learners should
+# not see them in their fork or any rendered docs site.
+FACILITATOR-GUIDE.md
+INSTRUCTOR-SCRIPT.md

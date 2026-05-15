@@ -1,0 +1,95 @@
+name: Copilot Review
+
+# Posts an automated, structured review summary on every PR.
+# Pairs with Module 07. Uses the GitHub Models inference API for the LLM call,
+# which is available to GitHub-hosted runners with the `models: read` permission.
+# Swap to your org's approved LLM action if Models access is not enabled.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  models: read
+
+concurrency:
+  group: copilot-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout PR head
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Collect PR diff
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr diff "$PR_NUMBER" > diff.patch
+          # Truncate very large diffs so the model call stays bounded.
+          MAX_BYTES=120000
+          if [ "$(wc -c < diff.patch)" -gt "$MAX_BYTES" ]; then
+            head -c "$MAX_BYTES" diff.patch > diff.patch.trimmed
+            mv diff.patch.trimmed diff.patch
+            echo "[note] Diff truncated to ${MAX_BYTES} bytes for review." >> diff.patch
+          fi
+
+      - name: Gather repo conventions
+        run: |
+          {
+            echo '--- copilot-instructions.md ---'
+            cat .github/copilot-instructions.md 2>/dev/null || echo '(none)'
+            echo
+            echo '--- code-review.prompt.md ---'
+            cat .github/prompts/code-review.prompt.md 2>/dev/null || echo '(none)'
+          } > conventions.md
+
+      - name: Build prompt
+        run: |
+          {
+            echo "You are reviewing a pull request for Publix."
+            echo "Follow the structure in code-review.prompt.md exactly."
+            echo "Prefix every comment with [blocking] or [nit]."
+            echo "Cite file:line for every claim."
+            echo "Limit [nit] comments to 5; group additional style notes under one heading."
+            echo
+            echo "===== REPO CONVENTIONS ====="
+            cat conventions.md
+            echo
+            echo "===== DIFF ====="
+            cat diff.patch
+          } > prompt.md
+
+      - name: Run model
+        id: model
+        uses: actions/ai-inference@v1
+        with:
+          # Pick any small/cheap model in your org's GitHub Models catalog.
+          # As of 2026: openai/gpt-4.1-mini is a good default; openai/gpt-5-mini
+          # and anthropic/claude-haiku-4 are also strong choices when available.
+          model: openai/gpt-4.1-mini
+          prompt-file: prompt.md
+          max-tokens: 2000
+
+      - name: Post review summary
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REVIEW: ${{ steps.model.outputs.response }}
+        run: |
+          {
+            echo "## Copilot Review Summary"
+            echo
+            echo "_Generated automatically. A human reviewer is still required before merge._"
+            echo
+            echo "$REVIEW"
+          } > review.md
+          gh pr comment "$PR_NUMBER" -F review.md
