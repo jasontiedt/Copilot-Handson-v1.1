@@ -1,30 +1,24 @@
-// Starter MCP server config for Module 07.
-// Copy/merge into .vscode/mcp.json (workspace) or your user mcp.json.
-// Field names follow current MCP conventions; check docs if your VS Code build differs.
+// MCP server config for Module 08 (and stretch goals).
+// All servers run via npx — no Docker required.
+// VS Code will prompt for the GitHub PAT on first use; nothing is written to disk.
 {
   "inputs": [
     {
       "id": "github_pat",
       "type": "promptString",
-      "description": "GitHub Personal Access Token (fine-scoped: repo, read:org, issues)",
+      "description": "GitHub Personal Access Token (scope: repo)",
       "password": true
     }
   ],
   "servers": {
     "github": {
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "-e",
-        "GITHUB_PERSONAL_ACCESS_TOKEN",
-        "ghcr.io/github/github-mcp-server"
-      ],
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_pat}"
       }
     },
+    // Optional — used only by Module 08 stretch goals.
     "filesystem": {
       "command": "npx",
       "args": [

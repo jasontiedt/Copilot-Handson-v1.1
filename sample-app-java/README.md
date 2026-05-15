@@ -38,16 +38,16 @@ src/main/java/com/example/grocery/
     ProductController.java
     PricingController.java
 src/test/java/com/example/grocery/
-  pricing/PricingEngineTest.java   # sparse on purpose — M03 expands it
+  pricing/PricingEngineTest.java   # sparse on purpose — M04 expands it
 ```
 
 ## Known issues (deliberate — used by modules)
 
-- `PricingEngine.apply` does not handle stacking conflicts deterministically (M03, M05, M06).
-- `ProductController.search` logs raw user input (log injection — M06).
-- Missing Javadoc on public methods (M04).
-- `InventoryService.adjust` is not thread-safe (M05).
-- No correlation-id logging (M08 stretch).
+- `PricingEngine.apply` does not handle stacking conflicts deterministically (M04, M06, M07).
+- `ProductController.search` logs raw user input (log injection — M07).
+- Missing Javadoc on public methods (M05).
+- `InventoryService.adjust` is not thread-safe (M06).
+- No correlation-id logging (M09 stretch).
 
 ## Run tests
 

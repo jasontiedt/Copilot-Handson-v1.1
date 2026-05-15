@@ -42,4 +42,4 @@ A new tab in `sample-app-frontend/` (next to Products / Cart preview) that calls
 
 - Persisting overrides (the stub is fine)
 - Per-user authorization (separate ticket)
-- Real store data (use the seeded SQLite from M07 if you want, otherwise hard-coded fixtures)
+- Real store data (use the seeded SQLite from M08 if you want, otherwise hard-coded fixtures)

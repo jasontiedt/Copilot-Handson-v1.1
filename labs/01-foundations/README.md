@@ -14,7 +14,7 @@
 - Tell Inline / Ask / Plan / Agent surfaces apart and pick the right one
 - Use the `#` context picker correctly (Files, Symbols, Selection, Changes, …)
 - Invoke prompt files with `/<name>` and read their frontmatter
-- Author your own `.prompt.md` using the **Role / Task / Context / Constraints / Examples / Verification** pattern (intro-level; M02 deepens this)
+- Author your own `.prompt.md` using the **Role / Task / Context / Constraints / Examples / Verification** pattern (intro-level; M03 deepens this)
 
 ## Setup (do once for the whole curriculum, ~15 min)
 
@@ -87,7 +87,7 @@
 2. Run `/generate-unit-tests`.
 3. **Read the coverage-gap analysis** before reading the proposed tests. Save 3 gaps you wouldn't have thought of.
 
-**Checkpoint** — you have a coverage-gap list to carry into M03.
+**Checkpoint** — you have a coverage-gap list to carry into M04.
 
 ---
 

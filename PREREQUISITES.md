@@ -7,15 +7,14 @@ Complete this checklist **before** the workshop starts. We will not stop to inst
 - [ ] **VS Code** latest stable
 - [ ] **GitHub Copilot** + **Copilot Chat** extensions, signed in with a license that includes **Ask / Plan / Agent** modes and MCP
 - [ ] **Git** ≥ 2.40
-- [ ] **GitHub CLI** (`gh`) installed and authenticated (`gh auth login`) — used in M07/M08 against your fork of this repo
-- [ ] **Docker Desktop** (used for the GitHub MCP server in M07; optional if you use the native MCP binary)
-- [ ] **Node.js ≥ 20** and **npm** (required for the frontend used from M01 onward)
+- [ ] **GitHub CLI** (`gh`) installed and authenticated (`gh auth login`) — used in M02, M08, and M09 against your fork of this repo
+- [ ] **Node.js ≥ 20** and **npm** (required for the frontend from M01 onward, and for all MCP servers in M08/M10)
 
 ### Confirm Copilot is current
 
 - Open Chat. Confirm the mode picker shows **Ask**, **Plan**, and **Agent**. If it shows **Edit**, update the Copilot Chat extension.
 - Click the **model picker** under the chat input. Pin one frontier model (e.g. *Claude Sonnet 4* or *GPT-5*) for hard tasks and one fast model (e.g. *GPT-4.1 mini*) for routine work. You'll switch between them throughout the workshop.
-- Open the **MCP** view in the Activity Bar. You don't need any servers configured yet — just confirm the view exists; M07 wires up servers.
+- Open the **MCP** view in the Activity Bar. You don't need any servers configured yet — just confirm the view exists; M08 wires up servers.
 
 ## Backend — pick at least one
 
@@ -52,9 +51,9 @@ Open <http://localhost:5173>. You should see three products and a working **Cart
 
 ## Optional but recommended
 
-- [ ] **Fork this repository** to your GitHub account before M07 — the fork is where you'll open PRs and issues. `gh repo fork --remote --clone` does it in one command. No need to create a separate scratch repo: this repo already ships with seeded issues ([`seed-issues/`](seed-issues/README.md)) and a PR-review GitHub Action.
-- [ ] **GitHub Personal Access Token** with `repo` scope, available to paste when VS Code prompts (M07).
-- [ ] Disable email/Slack notifications for two hours when running M08.
+- [ ] **Fork this repository** to your GitHub account before M08 — the fork is where you'll open PRs and issues. `gh repo fork --remote --clone` does it in one command. No need to create a separate scratch repo: this repo already ships with seeded issues ([`seed-issues/`](seed-issues/README.md)) and a PR-review GitHub Action.
+- [ ] **GitHub Personal Access Token** with `repo` scope, available to paste when VS Code prompts (M08).
+- [ ] Disable email/Slack notifications for two hours when running M09.
 
 ## If something doesn't work
 

@@ -1,6 +1,6 @@
 # Grocery Demo — Frontend (React + Vite)
 
-Minimal React/Vite SPA that calls the Java or .NET backend. Used by every lab module from M03 onward.
+Minimal React/Vite SPA that calls the Java or .NET backend. Used by every lab module from M04 onward.
 
 ## Run
 
@@ -31,9 +31,9 @@ npm test
 | Path | Purpose |
 |---|---|
 | `src/api/client.ts` | Typed fetch wrapper for `/api/products`, `/api/products/search`, `/api/pricing/quote` |
-| `src/pages/ProductsPage.tsx` | List + search; used in M05 (debugging) and M06 (XSS review) |
-| `src/pages/CartPage.tsx` | Cart + ads quote button; used in M08 capstone |
-| `src/components/PriceBadge.tsx` | Tiny component — target of M03 frontend TDD |
+| `src/pages/ProductsPage.tsx` | List + search; used in M06 (debugging) and M07 (XSS review) |
+| `src/pages/CartPage.tsx` | Cart + ads quote button; used in M09 capstone |
+| `src/components/PriceBadge.tsx` | Tiny component — target of M04 frontend TDD |
 
 ## API contract (must match both backends)
 

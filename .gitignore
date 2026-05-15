@@ -6,3 +6,11 @@ scratch/*
 # not see them in their fork or any rendered docs site.
 FACILITATOR-GUIDE.md
 INSTRUCTOR-SCRIPT.md
+# Squad: ignore runtime state (logs, inbox, sessions)
+.squad/orchestration-log/
+.squad/log/
+.squad/decisions/inbox/
+.squad/sessions/
+.squad/.scratch/
+# Squad: SubSquad activation file (local to this machine)
+.squad-workstream

@@ -25,19 +25,22 @@ A hands-on, scenario-driven curriculum for engineers who already use GitHub Copi
 | # | Module | Level | Time | Primary surfaces |
 |---|---|---|---|---|
 | [01](labs/01-foundations/README.md) | Foundations: Context, Prompts & Modes | 🟢 | 75m | Chat (Ask / Plan / Agent) + Prompt Files |
-| [02](labs/02-custom-instructions/README.md) | Custom Instructions & Project Standards | 🟡 | 75m | Workspace customization + Chat |
-| [03](labs/03-tdd-across-stack/README.md) | TDD Across the Stack | 🟢🟡 | 90m | Chat + Inline + Edit + Terminal |
-| [04](labs/04-documentation/README.md) | Documentation Everywhere | 🟢 | 60m | Chat + Edit |
-| [05](labs/05-debugging/README.md) | Debugging Across the Stack | 🟡 | 75m | Chat + Terminal + Debugger + Browser |
-| [06](labs/06-review-and-security/README.md) | Code Review & Secure Coding | 🟡🔴 | 90m | Reviewer / Security Auditor modes |
-| [07](labs/07-automation/README.md) | Automation: MCP, PR Review & Issues | 🔴 | 2h | Agent + MCP + GitHub.com + Actions |
-| [08](labs/08-capstone/README.md) | Capstone: Agent Mode End-to-End | 🔴 | 2–3h | Agent + everything |
+| [02](labs/02-squad-setup/README.md) | Squad Setup: Persistent AI Agent Teams | 🟢 | 30m | Squad CLI + Copilot agent + GitHub CLI |
+| [03](labs/03-custom-instructions/README.md) | Custom Instructions & Project Standards | 🟡 | 75m | Workspace customization + Chat |
+| [04](labs/04-tdd-across-stack/README.md) | TDD Across the Stack | 🟢🟡 | 90m | Chat + Inline + Edit + Terminal |
+| [05](labs/05-documentation/README.md) | Documentation Everywhere | 🟢 | 60m | Chat + Edit |
+| [06](labs/06-debugging/README.md) | Debugging Across the Stack | 🟡 | 75m | Chat + Terminal + Debugger + Browser |
+| [07](labs/07-review-and-security/README.md) | Code Review & Secure Coding | 🟡🔴 | 90m | Reviewer / Security Auditor modes |
+| [08](labs/08-automation/README.md) | Automation: MCP, PR Review & Issues | 🔴 | 90m | Agent + MCP + GitHub.com + Actions |
+| [09](labs/09-capstone/README.md) | Capstone: Agent Mode End-to-End | 🔴 | 2–3h | Agent + everything |
+| [10](labs/10-ado-mcp/README.md) | Azure DevOps MCP: Work Items, PRs & Boards | 🔴 | 75m | Agent + MCP + Azure DevOps |
 
 ## Suggested delivery tracks
 
-- **Half-day (~4h):** Modules 01, 02, 03, 04
-- **Full-day (~8h):** Modules 01–06
-- **Two-day (~14h):** All eight modules + the M07/M08 stretch goals
+- **Half-day (~4h):** Modules 01, 02, 03, 04, 05
+- **Full-day (~8h):** Modules 01–07
+- **Two-day (~14h):** Modules 01–09 + the M08/M09 stretch goals
+- **ADO add-on (+75m):** Module 10 — run after Module 08 if your org uses Azure DevOps instead of (or alongside) GitHub
 
 ## Repository layout
 
@@ -47,12 +50,12 @@ A hands-on, scenario-driven curriculum for engineers who already use GitHub Copi
   instructions/               Path-scoped instructions (applyTo globs)
   prompts/                    Reusable prompt files (invoke from Chat with /<name>)
   chatmodes/                  Custom chat modes (Reviewer, Security Auditor)
-  workflows/copilot-review.yml  Automated PR review summary (M07)
-.vscode/mcp.json              GitHub + filesystem + SQLite MCP server config (M07)
+  workflows/copilot-review.yml  Automated PR review summary (M08)
+.vscode/mcp.json              GitHub + filesystem + SQLite MCP server config (M08)
 sample-app-java/              Spring Boot backend — Grocery Pricing & Inventory API
 sample-app-dotnet/            ASP.NET Core backend — same API in .NET
 sample-app-frontend/          React + Vite SPA that calls either backend
-labs/01..08/                  Self-contained modules with hints
+labs/01..10/                  Self-contained modules with hints (02 sets up the Squad agent team; 10 is the ADO MCP add-on)
 scripts/seed-grocery-db.sql   Sample data for the SQLite MCP demo
 scratch/                      Sandbox dir for MCP filesystem server (git-ignored)
 FACILITATOR-GUIDE.md          Timing, cohort sizing, debrief prompts, rubric

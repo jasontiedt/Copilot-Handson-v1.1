@@ -23,16 +23,16 @@ src/Grocery.Api/
   Pricing/PricingEngine.cs       # core lab target
   Inventory/InventoryService.cs
 tests/Grocery.Tests/
-  PricingEngineTests.cs          # sparse on purpose — M03 expands it
+  PricingEngineTests.cs          # sparse on purpose — M04 expands it
 ```
 
 ## Known issues (deliberate — used by modules)
 
-- `PricingEngine.Apply` does not handle stacking conflicts deterministically (M03, M05, M06).
-- `/api/products/search` logs raw user input (log injection — M06).
-- Missing XML doc comments on public APIs (M04).
-- `InventoryService.Adjust` is not thread-safe (M05).
-- No correlation-id middleware (M08 stretch).
+- `PricingEngine.Apply` does not handle stacking conflicts deterministically (M04, M06, M07).
+- `/api/products/search` logs raw user input (log injection — M07).
+- Missing XML doc comments on public APIs (M05).
+- `InventoryService.Adjust` is not thread-safe (M06).
+- No correlation-id middleware (M09 stretch).
 
 ## Run tests
 
