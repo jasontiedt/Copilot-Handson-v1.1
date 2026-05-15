@@ -53,16 +53,16 @@
 
 **Goal:** Stop relying on implicit context. Pick context explicitly.
 
-> The `#` menu is **menu-driven**: type `#` in Chat → quick-pick opens → choose a category (**Files**, **Folders**, **Symbols**, **Selection**, **Codebase**, **Changes**, **Terminal**, **Problems**) → choose the item. Typing literal `#file:Foo` as plain text does nothing.
+> Using '+' input for context
 
 **Try this**
 
 1. New chat, no context. Ask: *"What does the pricing engine do?"* — note how vague the answer is.
-2. Type `#` → **Files** → `PricingEngine.java`/`.cs`. Ask the same question. Diff the quality.
-3. Select the `apply`/`Apply` method body in the editor. Type `#` → **Selection**. Ask: *"What edge cases are missing here?"*
-4. Make a small uncommitted edit. Type `#` → **Changes**. Ask: *"Summarize this change in two sentences."*
+2. Use the '+' button in the bottom left of the chat window input → **Files** → select `PricingEngine.java`/`.cs`. Ask the same question. Diff the quality.
+3. Use the '+' button in the bottom left of the chat window input → **Open Editors**. Ask: *"What edge cases are missing here?"*
+4. Make a small uncommitted edit. Ask: *"Summarize this change in two sentences."*
 
-**Checkpoint** — you can produce 3 distinctly different answers about the same code by changing only the `#` context.
+**Checkpoint** — you can produce 3 distinctly different answers about the same code by changing only the context.
 
 ---
 
