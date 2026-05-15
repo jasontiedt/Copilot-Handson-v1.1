@@ -56,18 +56,6 @@ Accept the proposed roster.
 
 ---
 
-## Exercise 3 — Commit the team (5 min) 🟢
-
-```bash
-git add .squad
-git diff --staged .squad | grep -Ei "token|secret|api[-_]?key" && echo "STOP — secret in diff" || echo "clean"
-git commit -m "chore: scaffold Squad agent team"
-```
-
-**Checkpoint** — `.squad/` is committed. Anyone who clones the repo now gets the same team and accumulated history.
-
----
-
 ## When NOT to use Squad
 
 - Single-file edits — one plain Copilot chat is faster than spinning up a team.
