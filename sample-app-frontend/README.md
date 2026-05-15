@@ -1,4 +1,4 @@
-# Publix Grocery — Frontend (React + Vite)
+# Grocery Demo — Frontend (React + Vite)
 
 Minimal React/Vite SPA that calls the Java or .NET backend. Used by every lab module from M03 onward.
 
@@ -11,7 +11,7 @@ npm install
 # In another terminal: start Java backend (port 8080)
 #   cd ../sample-app-java && mvn spring-boot:run
 # OR start .NET backend (port 5080)
-#   cd ../sample-app-dotnet && dotnet run --project src/Publix.Grocery.Api
+#   cd ../sample-app-dotnet && dotnet run --project src/Grocery.Api
 
 npm run dev          # defaults to proxying /api -> http://localhost:8080
 # For .NET:

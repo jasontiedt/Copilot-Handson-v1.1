@@ -33,7 +33,7 @@
 
 ---
 
-## Exercise 2 — Add a Publix-specific rule (15 min) 🟡
+## Exercise 2 — Add a team-specific rule (15 min) 🟡
 
 **Goal:** Add a rule and watch Copilot adopt it without prompting.
 
@@ -107,7 +107,7 @@
 
 1. Instructions vs prompts — when do you reach for each?
 2. What is the right granularity for `applyTo`?
-3. Which file from today would you commit to a real Publix repo *first*?
+3. Which file from today would you commit to a real team repo *first*?
 
 ## Hints
 

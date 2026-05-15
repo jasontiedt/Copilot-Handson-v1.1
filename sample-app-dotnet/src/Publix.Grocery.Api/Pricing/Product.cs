@@ -1,4 +1,4 @@
-namespace Publix.Grocery.Api.Pricing;
+namespace Grocery.Api.Pricing;
 
 public sealed record Product(
     string Sku,

@@ -1,4 +1,4 @@
-# Advanced GitHub Copilot — Publix Lab Curriculum
+# Advanced GitHub Copilot — Hands-On Lab Curriculum
 
 A hands-on, scenario-driven curriculum for engineers who already use GitHub Copilot for autocomplete and want to master its **advanced** capabilities: the `#` context picker, prompt files, custom instructions, chat modes, MCP servers, agent mode, secure-coding workflows, PR-review automation, and issue/work-item automation.
 
@@ -8,7 +8,7 @@ A hands-on, scenario-driven curriculum for engineers who already use GitHub Copi
 
 ## Who this is for
 
-- Developers, SDETs, tech leads, and platform engineers at Publix who use Copilot daily and want to go deeper.
+- Developers, SDETs, tech leads, and platform engineers who use Copilot daily and want to go deeper.
 - Mixed-skill cohorts: each module is tagged 🟢 Beginner / 🟡 Intermediate / 🔴 Advanced with stretch goals.
 
 ## What you will build / learn

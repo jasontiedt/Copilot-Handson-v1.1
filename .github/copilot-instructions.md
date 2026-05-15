@@ -2,7 +2,7 @@
 
 > Loaded automatically by Copilot Chat for **every** request in this repository. Keep it short, durable, and stack-aware.
 
-This repository hosts the **Advanced Copilot Lab Curriculum for Publix** with parallel **Java (Spring Boot)** and **.NET (ASP.NET Core)** sample applications.
+This repository hosts the **Advanced Copilot Hands-On Lab Curriculum** with parallel **Java (Spring Boot)** and **.NET (ASP.NET Core)** sample applications.
 
 ## Project conventions
 

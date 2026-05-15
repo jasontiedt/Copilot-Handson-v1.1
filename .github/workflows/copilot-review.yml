@@ -55,7 +55,7 @@ jobs:
       - name: Build prompt
         run: |
           {
-            echo "You are reviewing a pull request for Publix."
+            echo "You are reviewing a pull request."
             echo "Follow the structure in code-review.prompt.md exactly."
             echo "Prefix every comment with [blocking] or [nit]."
             echo "Cite file:line for every claim."

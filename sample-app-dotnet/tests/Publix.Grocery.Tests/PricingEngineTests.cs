@@ -1,8 +1,8 @@
 using FluentAssertions;
-using Publix.Grocery.Api.Pricing;
+using Grocery.Api.Pricing;
 using Xunit;
 
-namespace Publix.Grocery.Tests;
+namespace Grocery.Tests;
 
 public class PricingEngineTests
 {

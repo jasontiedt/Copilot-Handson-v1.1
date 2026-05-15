@@ -4,7 +4,7 @@ A minimal Spring Boot 3 service used as the **shared scenario** across the lab c
 
 ## Domain
 
-A simplified grocery pricing engine for Publix-style scenarios:
+A simplified grocery pricing engine for grocery-store scenarios:
 
 - `Product` — SKU, name, unit price, taxable flag
 - `WeeklyAd` — promotion rules (BOGO, percent-off, dollar-off, "buy N for $X")
@@ -25,7 +25,7 @@ curl http://localhost:8080/api/products
 ## Project layout
 
 ```
-src/main/java/com/publix/grocery/
+src/main/java/com/example/grocery/
   GroceryApplication.java
   pricing/
     Product.java          # record
@@ -37,7 +37,7 @@ src/main/java/com/publix/grocery/
   api/
     ProductController.java
     PricingController.java
-src/test/java/com/publix/grocery/
+src/test/java/com/example/grocery/
   pricing/PricingEngineTest.java   # sparse on purpose — M03 expands it
 ```
 

@@ -15,8 +15,8 @@ You inherit `PricingEngine` with one happy-path test and silent bugs. You also i
 
 | Stack | Backend target | Backend test |
 |---|---|---|
-| Java | [`PricingEngine.java`](../../sample-app-java/src/main/java/com/publix/grocery/pricing/PricingEngine.java) | [`PricingEngineTest.java`](../../sample-app-java/src/test/java/com/publix/grocery/pricing/PricingEngineTest.java) |
-| .NET | [`PricingEngine.cs`](../../sample-app-dotnet/src/Publix.Grocery.Api/Pricing/PricingEngine.cs) | [`PricingEngineTests.cs`](../../sample-app-dotnet/tests/Publix.Grocery.Tests/PricingEngineTests.cs) |
+| Java | [`PricingEngine.java`](../../sample-app-java/src/main/java/com/example/grocery/pricing/PricingEngine.java) | [`PricingEngineTest.java`](../../sample-app-java/src/test/java/com/example/grocery/pricing/PricingEngineTest.java) |
+| .NET | [`PricingEngine.cs`](../../sample-app-dotnet/src/Grocery.Api/Pricing/PricingEngine.cs) | [`PricingEngineTests.cs`](../../sample-app-dotnet/tests/Grocery.Tests/PricingEngineTests.cs) |
 | Frontend | [`PriceBadge.tsx`](../../sample-app-frontend/src/components/PriceBadge.tsx) | [`PriceBadge.test.tsx`](../../sample-app-frontend/src/components/__tests__/PriceBadge.test.tsx) |
 
 ---

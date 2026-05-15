@@ -1,4 +1,4 @@
-namespace Publix.Grocery.Api.Pricing;
+namespace Grocery.Api.Pricing;
 
 // Intentionally under-documented and missing edge cases for use in labs.
 public sealed class PricingEngine

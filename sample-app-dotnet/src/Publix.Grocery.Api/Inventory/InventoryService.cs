@@ -1,4 +1,4 @@
-namespace Publix.Grocery.Api.Inventory;
+namespace Grocery.Api.Inventory;
 
 // NOTE: Intentionally NOT thread-safe. Module 05 asks learners to reproduce and fix this.
 public sealed class InventoryService

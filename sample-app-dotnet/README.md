@@ -7,7 +7,7 @@ A minimal ASP.NET Core 8 service used as the **shared scenario** across the lab 
 ```bash
 cd sample-app-dotnet
 dotnet build
-dotnet run --project src/Publix.Grocery.Api
+dotnet run --project src/Grocery.Api
 # in another terminal:
 curl http://localhost:5080/api/products
 ```
@@ -15,14 +15,14 @@ curl http://localhost:5080/api/products
 ## Project layout
 
 ```
-src/Publix.Grocery.Api/
+src/Grocery.Api/
   Program.cs                     # minimal API endpoints
   Pricing/Product.cs             # record
   Pricing/WeeklyAd.cs            # discriminated union via abstract record
   Pricing/CartLine.cs
   Pricing/PricingEngine.cs       # core lab target
   Inventory/InventoryService.cs
-tests/Publix.Grocery.Tests/
+tests/Grocery.Tests/
   PricingEngineTests.cs          # sparse on purpose — M03 expands it
 ```
 

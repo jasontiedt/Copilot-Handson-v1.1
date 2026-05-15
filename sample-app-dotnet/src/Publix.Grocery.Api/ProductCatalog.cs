@@ -1,6 +1,6 @@
-using Publix.Grocery.Api.Pricing;
+using Grocery.Api.Pricing;
 
-namespace Publix.Grocery.Api;
+namespace Grocery.Api;
 
 public sealed class ProductCatalog
 {

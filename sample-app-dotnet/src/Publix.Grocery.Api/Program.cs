@@ -1,5 +1,5 @@
-using Publix.Grocery.Api.Inventory;
-using Publix.Grocery.Api.Pricing;
+using Grocery.Api.Inventory;
+using Grocery.Api.Pricing;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<PricingEngine>();

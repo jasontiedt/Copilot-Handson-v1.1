@@ -165,7 +165,7 @@ What ships in this repo (already wired up — no copy/paste needed):
 
 1. What was the highest-leverage MCP tool?
 2. Where did the agent's plan differ from how a human would have done it?
-3. What guardrails would you require before letting an MCP agent run unattended in a Publix repo?
+3. What guardrails would you require before letting an MCP agent run unattended in a team repo?
 4. What's the right mix of human review vs Copilot review vs CI checks?
 
 ## Hints

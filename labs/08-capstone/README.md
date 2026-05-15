@@ -69,7 +69,7 @@ You'll do this issue → branch → tests → code → review → PR — minimiz
 1. **Where the agent saved the most time.**
 2. **Where it cost you time** (re-prompts, undoing wrong changes, missed conventions).
 3. **One concrete change** to your `.github/copilot-instructions.md`, prompt files, or `AGENTS.md` to make next time better.
-4. **A rule for when *not* to use agent mode** in your real Publix repos.
+4. **A rule for when *not* to use agent mode** in your real team repos.
 
 ## Stretch
 

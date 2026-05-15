@@ -38,7 +38,7 @@ Clone this repo, then:
 # Backend — Java
 cd sample-app-java && mvn -q -DskipTests package && mvn spring-boot:run
 # or .NET
-cd sample-app-dotnet && dotnet build && dotnet run --project src/Publix.Grocery.Api
+cd sample-app-dotnet && dotnet build && dotnet run --project src/Grocery.Api
 ```
 
 ```bash

@@ -21,7 +21,7 @@
 1. Complete [PREREQUISITES.md](../../PREREQUISITES.md).
 2. Pick **one** backend stack and start it:
    - Java: `cd sample-app-java && mvn spring-boot:run`
-   - .NET: `cd sample-app-dotnet && dotnet run --project src/Publix.Grocery.Api`
+   - .NET: `cd sample-app-dotnet && dotnet run --project src/Grocery.Api`
 3. Start the frontend:
    ```bash
    cd sample-app-frontend
